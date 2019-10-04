@@ -22,6 +22,13 @@ namespace WinFormApp
             //MessageBox.Show("Welcome Gomathi shanmugam");
             MessageBox.Show("Welcome Harishankar");
         }
+        private int Add()
+        {
+            int x = 1;
+            int y = 2;
+            int z = x + y;
+            return z;
+        }
     }
 }
 //Hari edited in Github website
