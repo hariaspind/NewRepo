@@ -16,5 +16,23 @@ namespace WinFormApp
         {
             InitializeComponent();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            List<Individual> individuals = new List<Individual>();
+            Individual ind = new Individual();
+            ind.FirstName = txtFirstName.Text;
+
+            individuals.Add(ind);
+
+
+            GvFamilyData.DataSource= individuals; 
+        }
+    }
+    public class Individual {
+        public string  FirstName {get;set;}
+        public string LastName { get; set; }
+        public string Age { get; set; }
+        public string DOB { get; set; }
     }
 }
